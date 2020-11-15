@@ -16,19 +16,11 @@
 
 package com.example.courtfinder;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
-import android.content.Context;
-import android.os.AsyncTask;
-import android.support.annotation.NonNull;
-
-/**
+/
  * WordRoomDatabase. Includes code to create the database.
  * After the app creates the database, all further interactions
  * with it happen through the WordViewModel.
- */
+
 
 @Database(entities = {Court.class}, version = 2, exportSchema = false)
 public abstract class CourtRoomDatabase extends RoomDatabase {

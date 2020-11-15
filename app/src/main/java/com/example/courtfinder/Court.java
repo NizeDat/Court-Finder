@@ -16,16 +16,13 @@
 
 package com.example.courtfinder;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
 
-/**
+
+ /**
  * Entity class that represents a word in the database
  */
 
+/**
 @Entity(tableName = "court_table")
 public class Court {
 
@@ -43,7 +40,7 @@ public class Court {
     /*
     * This constructor is annotated using @Ignore, because Room expects only
     * one constructor by default in an entity class.
-    */
+
 
     @Ignore
     public Court(int id, @NonNull String court) {
@@ -61,3 +58,4 @@ public class Court {
         this.id = id;
     }
 }
+*/

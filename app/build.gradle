@@ -46,7 +46,21 @@ dependencies {
     annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     androidTestImplementation "android.arch.persistence.room:testing:$rootProject.roomVersion"
 
-// Lifecycle components
+    // Lifecycle components
     implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifecycleVersion"
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+}
+
+
+configurations {
+    all {
+        resolutionStrategy {
+            // do not upgrade above 3.12.0 to support API < 21 while server uses
+            // COMPATIBLE_TLS, or okhttp3 is used in project
+            force 'com.squareup.okhttp3:okhttp:3.12.0'
+            force 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+        }
+    }
 }

@@ -16,12 +16,6 @@
 
 package com.example.courtfinder;
 
-import android.app.Application;
-import android.arch.lifecycle.LiveData;
-import android.os.AsyncTask;
-
-import java.util.List;
-
 /**
  * This class holds the implementation code for the methods that interact with the database.
  * Using a repository allows us to group the implementation methods together,
@@ -34,7 +28,7 @@ import java.util.List;
  * Typically, all you need to do to implement a database method
  * is to call it on the data access object (DAO), in the background if applicable.
  */
-
+/**
 public class CourtRepository {
 
     private CourtDao mWordDao;
@@ -71,7 +65,7 @@ public class CourtRepository {
 
     /**
      * Inserts a word into the database.
-     */
+
     private static class insertAsyncTask extends AsyncTask<Court, Void, Void> {
 
         private CourtDao mAsyncTaskDao;
@@ -89,7 +83,7 @@ public class CourtRepository {
 
     /**
      * Deletes all words from the database (does not delete the table).
-     */
+
     private static class deleteAllWordsAsyncTask extends AsyncTask<Void, Void, Void> {
         private CourtDao mAsyncTaskDao;
 
@@ -106,7 +100,7 @@ public class CourtRepository {
 
     /**
      *  Deletes a single word from the database.
-     */
+
     private static class deleteWordAsyncTask extends AsyncTask<Court, Void, Void> {
         private CourtDao mAsyncTaskDao;
 
@@ -123,7 +117,7 @@ public class CourtRepository {
 
     /**
      *  Updates a word in the database.
-     */
+
     private static class updateWordAsyncTask extends AsyncTask<Court, Void, Void> {
         private CourtDao mAsyncTaskDao;
 
@@ -138,3 +132,4 @@ public class CourtRepository {
         }
     }
 }
+*/
